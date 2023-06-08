@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import SignUpInfo from "./Signup/SignUpInfo";
 import PersonalInfo from "./Survey/Survey";
 import OtherInfo from "./Recap/Recap";
-import { CustomizedButtons } from "./CustomizedButtons";
 
 function Form() {
   const [page, setPage] = useState(0);
@@ -16,7 +15,7 @@ function Form() {
     nationality: "",
     other: "",
   });
-  const [isValidationMet, setIsValidationMet] = useState(true); // Track validation status
+  const [setIsValidationMet] = useState(true); // Track validation status
   const [showWarning, setShowWarning] = useState(false); // Track warning popup
 
   const FormTitles = ["Survey Sign Up", "Survey", "Thank you"];
