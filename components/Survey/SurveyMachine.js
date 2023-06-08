@@ -73,7 +73,6 @@ function SurveyPage({ formData, setFormData }) {
 
   const handleSubmit = () => {
     send({ type: "SUBMIT" });
-    // Perform form submission or any additional actions here
     console.log("Form submitted:", current.context.formData);
   };
 
